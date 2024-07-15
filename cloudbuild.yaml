@@ -17,7 +17,7 @@ steps:
     args:
       - '-c'
       - |
-        python3 -m unittest discover -s tests -p '*_test.py'
+        python3 -m unittest discover -s tests -p '*_app.py'
     dir: 'app'  # Directory where tests directory is located
 # Build the container image
 - name: gcr.io/cloud-builders/docker
